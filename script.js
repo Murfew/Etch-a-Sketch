@@ -18,10 +18,25 @@ function initializeGrid(size) {
                 gridItem.classList.add("colored")
             })
 
-
             gridRow.appendChild(gridItem)
         }
     }
 }
+
+
+const gridContainer = document.getElementById("grid")
+const newGridBtn = document.getElementById("newGrid")
+newGridBtn.addEventListener("click", () => {
+    let newSize = prompt("Enter a size for the grid")
+
+    if (newSize > 100) {
+        alert("Size cannot be greater than 100!")
+    } else if (newSize) {
+
+        gridContainer.replaceChildren()
+
+        initializeGrid(newSize)
+    }
+})
 
 initializeGrid(16)

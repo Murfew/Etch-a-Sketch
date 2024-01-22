@@ -23,3 +23,9 @@ body {
 .colored {
     background-color: black;
 }
+
+#newGrid {
+    align-self: start;
+    margin: 50px;
+    padding: 10px;
+}
