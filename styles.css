@@ -2,9 +2,20 @@
     height: 700px;
     width: 700px;
     border: 2px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
     display: flex;
     justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.item {
+    flex: 1;
 }
