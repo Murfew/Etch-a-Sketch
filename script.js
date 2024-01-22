@@ -1,7 +1,7 @@
 function initializeGrid(size) {
 
     const gridContainer = document.getElementById("grid")
-    
+
     for (let i = 0; i < size; i++) {
 
         const gridRow = document.createElement("div")
@@ -13,6 +13,12 @@ function initializeGrid(size) {
 
             const gridItem = document.createElement("div")
             gridItem.setAttribute("class", "item")
+
+            gridItem.addEventListener("mouseover", () => {
+                gridItem.classList.add("colored")
+            })
+
+
             gridRow.appendChild(gridItem)
         }
     }

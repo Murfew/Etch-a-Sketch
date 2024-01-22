@@ -19,3 +19,7 @@ body {
 .item {
     flex: 1;
 }
+
+.colored {
+    background-color: black;
+}
